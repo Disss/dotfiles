@@ -20,8 +20,8 @@ dotfiles:
     dst: ~/.tmux.conf
     actions:
     - tmux-tpm-install
-    - tmux-plugins-install
-    - tmux-plugins-update
+      #- tmux-plugins-install
+      #- tmux-plugins-update
   d_keepassxc:
     src: config/keepassxc
     dst: ~/.config/keepassxc
