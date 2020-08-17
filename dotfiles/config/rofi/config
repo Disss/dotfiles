@@ -1,0 +1,27 @@
+# visual & layout
+rofi.show-icons: true
+rofi.icon-theme: Papirus-Dark
+rofi.columns: 1
+rofi.fake-transparency: true
+
+# modes
+rofi.modi: combi
+rofi.combi-modi: drun,run
+
+# matching
+rofi.matching: normal
+rofi.drun-match-fields: name,generic,exec
+rofi.terminal: termite
+
+#general
+rofi.ssh-command: {terminal} -e "{ssh-client} {host}"
+#rofi.run-command: {terminal} -e "{cmd}"
+rofi.theme: /home/vstrelkov/.local/share/rofi/themes/slate_fixed.rasi
+
+rofi.kb-row-up:                      Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab
+rofi.kb-row-down:                    Down,Control+j
+rofi.kb-accept-entry:                Control+m,Return,KP_Enter
+rofi.kb-remove-to-eol:               Control+Shift+e
+rofi.kb-mode-next:                   Shift+Right,Control+Tab,Control+l
+rofi.kb-mode-previous:               Shift+Left,Control+Shift+Tab,Control+h
+rofi.kb-remove-char-back:            BackSpace

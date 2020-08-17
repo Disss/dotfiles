@@ -1,0 +1,59 @@
+actions:
+  pre:
+    tmux-tpm-install: rm -rf ~/.tmux/plugins/tpm && git clone https://github.com/tmux-plugins/tpm
+      ~/.tmux/plugins/tpm
+  post:
+    tmux-plugins-install: ~/.tmux/plugins/tpm/bin/install_plugins
+    tmux-plugins-update: ~/.tmux/plugins/tpm/bin/update_plugins all
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+dotfiles:
+  f_tmux.conf:
+    src: tmux.conf
+    dst: ~/.tmux.conf
+    actions:
+    - tmux-tpm-install
+    - tmux-plugins-install
+    - tmux-plugins-update
+  d_keepassxc:
+    src: config/keepassxc
+    dst: ~/.config/keepassxc
+  d_kvantum:
+    src: config/Kvantum
+    dst: ~/.config/Kvantum
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
+  d_themes:
+    src: local/share/rofi/themes
+    dst: ~/.local/share/rofi/themes
+  f_config:
+    src: config/termite/config
+    dst: ~/.config/termite/config
+  d_zim:
+    src: config/zim
+    dst: ~/.config/zim
+  d_xfce4:
+    src: config/xfce4
+    dst: ~/.config/xfce4
+profiles:
+  vstrelkov-pc:
+    dotfiles:
+    - f_tmux.conf
+    - d_keepassxc
+    - d_kvantum
+    - d_rofi
+    - d_themes
+    - f_config
+    - d_zim
+    - d_xfce4
+  vstrelkov-nb:
+    dotfiles:
+    - f_tmux.conf

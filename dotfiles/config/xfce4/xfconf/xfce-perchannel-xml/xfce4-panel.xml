@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <value type="int" value="3"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
+      <property name="length" type="uint" value="51"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="14"/>
+      <property name="size" type="uint" value="20"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="2"/>
+        <value type="int" value="3"/>
+        <value type="int" value="4"/>
+      </property>
+      <property name="output-name" type="string" value="Primary"/>
+      <property name="disable-struts" type="bool" value="false"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="1.000000"/>
+      </property>
+      <property name="length-adjust" type="bool" value="false"/>
+    </property>
+    <property name="panel-3" type="empty">
+      <property name="position" type="string" value="p=2;x=1536;y=9"/>
+      <property name="size" type="uint" value="20"/>
+      <property name="output-name" type="string" value="Primary"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="length" type="uint" value="49"/>
+      <property name="length-adjust" type="bool" value="false"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="1.000000"/>
+      </property>
+      <property name="icon-size" type="uint" value="14"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="18"/>
+        <value type="int" value="21"/>
+        <value type="int" value="22"/>
+        <value type="int" value="16"/>
+        <value type="int" value="14"/>
+      </property>
+      <property name="disable-struts" type="bool" value="false"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-2" type="string" value="tasklist">
+      <property name="grouping" type="uint" value="1"/>
+      <property name="show-labels" type="bool" value="false"/>
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="false"/>
+      <property name="sort-order" type="uint" value="1"/>
+      <property name="include-all-monitors" type="bool" value="true"/>
+      <property name="include-all-workspaces" type="bool" value="false"/>
+    </property>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-4" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="false"/>
+      <property name="workspace-scrolling" type="bool" value="false"/>
+    </property>
+    <property name="plugin-14" type="string" value="clock">
+      <property name="mode" type="uint" value="2"/>
+      <property name="tooltip-format" type="string" value="%A %d %B %Y"/>
+      <property name="digital-format" type="string" value="&lt;b&gt;%H:%M %d.%m.%y&lt;/b&gt;"/>
+      <property name="timezone" type="string" value="Europe/Moscow"/>
+    </property>
+    <property name="plugin-16" type="string" value="xkb">
+      <property name="display-type" type="uint" value="1"/>
+      <property name="display-name" type="uint" value="1"/>
+      <property name="display-scale" type="uint" value="70"/>
+      <property name="display-tooltip-icon" type="bool" value="false"/>
+      <property name="group-policy" type="uint" value="1"/>
+    </property>
+    <property name="plugin-18" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="true"/>
+    </property>
+    <property name="plugin-21" type="string" value="systray">
+      <property name="names-ordered" type="array">
+        <value type="string" value="obs"/>
+        <value type="string" value="teamviewer"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="zim"/>
+        <value type="string" value="slack"/>
+        <value type="string" value="discord"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="jetbrains-toolbox"/>
+        <value type="string" value="bluetooth enabled"/>
+        <value type="string" value="blueman-tray"/>
+        <value type="string" value="zoom"/>
+        <value type="string" value="whatsapp-nativefier-dark"/>
+        <value type="string" value="pidgin"/>
+        <value type="string" value="orage"/>
+        <value type="string" value="skypeforlinux"/>
+        <value type="string" value="qbittorrent"/>
+        <value type="string" value="eve"/>
+        <value type="string" value="insync"/>
+        <value type="string" value="keepassxc"/>
+        <value type="string" value="telegramdesktop"/>
+        <value type="string" value="remmina"/>
+        <value type="string" value="flameshot"/>
+      </property>
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="size-max" type="uint" value="22"/>
+    </property>
+    <property name="plugin-22" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chrome.instance10150;chrome.instance1068;chrome.instance11000;chrome.instance1106;chrome.instance1149789;chrome.instance1167;chrome.instance1276;chrome.instance1281;chrome.instance1291;chrome.instance1298;chrome.instance1302;chrome.instance1326;chrome.instance1343;chrome.instance1362;chrome.instance1379;chrome.instance1387;chrome.instance1401;chrome.instance1410;chrome.instance1447;chrome.instance1475;chrome.instance1505;chrome.instance1506;chrome.instance162177;chrome.instance1634;chrome.instance1687;chrome.instance1800;chrome.instance1843;chrome.instance1915;chrome.instance1916634;chrome.instance1987;chrome.instance2043;chrome.instance2134;chrome.instance2256119;chrome.instance2297;chrome.instance2309;chrome.instance24757;chrome.instance2494;chrome.instance2665712;chrome.instance27756;chrome.instance2851;chrome.instance29370;chrome.instance3131;chrome.instance3268760;chrome.instance3576;chrome.instance37416;chrome.instance3966;chrome.instance465622;chrome.instance5792;chrome.instance6038;chrome.instance655;chrome.instance674;chrome.instance761;chrome.instance884;chrome.instance968;vlc"/>
+    </property>
+  </property>
+</channel>
