@@ -43,6 +43,9 @@ dotfiles:
   d_xfce4:
     src: config/xfce4
     dst: ~/.config/xfce4
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
 profiles:
   vstrelkov-pc:
     dotfiles:
@@ -54,6 +57,7 @@ profiles:
     - f_config
     - d_zim
     - d_xfce4
+    - f_zshrc
   vstrelkov-nb:
     dotfiles:
     - f_tmux.conf

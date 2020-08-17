@@ -1,0 +1,29 @@
+export ZSH="/home/vstrelkov/.oh-my-zsh"
+source ~/.local/share/antigen.zsh
+
+antigen use oh-my-zsh
+antigen bundle git
+antigen bundle tmux
+antigen bundle docker
+antigen bundle command-not-found
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen theme denysdovhan/spaceship-prompt
+antigen apply
+
+HYPHEN_INSENSITIVE="true"
+DISABLE_AUTO_TITLE="true"
+
+source $ZSH/oh-my-zsh.sh
+
+# user configuration
+export EDITOR=vim
+export PATH=$PATH:~/.local/bin
+export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault
+export DOTDROP_PROFILE="`hostname`"
+export DOTDROP_CONFIG='~/dotfiles/config.yaml'
+export DOTDROP_NOBANNER=
+
+alias diff='diff --color=auto'
+alias grep='grep --color=auto'
+alias ip='ip -color=auto'
+alias dotdrop='~/dotfiles/dotdrop.sh --cfg=~/dotfiles/config.yaml'
