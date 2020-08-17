@@ -40,9 +40,6 @@ dotfiles:
   d_zim:
     src: config/zim
     dst: ~/.config/zim
-  d_xfce4:
-    src: config/xfce4
-    dst: ~/.config/xfce4
   f_zshrc:
     src: zshrc
     dst: ~/.zshrc
@@ -56,8 +53,14 @@ profiles:
     - d_themes
     - f_config
     - d_zim
-    - d_xfce4
     - f_zshrc
   vstrelkov-nb:
     dotfiles:
     - f_tmux.conf
+    - d_keepassxc
+    - d_kvantum
+    - d_rofi
+    - d_themes
+    - f_config
+    - d_zim
+    - f_zshrc
